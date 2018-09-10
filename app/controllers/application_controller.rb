@@ -23,7 +23,9 @@ class ApplicationController < Sinatra::Base
 
   get '/posts' do
     @posts = Post.all
+    if @posts.size > 0
     erb :index
+  end
   end
 
   get '/posts/:id' do
