@@ -2,7 +2,8 @@
 <h3> Create a new Post here </h3>
 <a href='/posts/new'>Click Here </a>
 
-<% if @posts.size>0
-  @posts.each do |item| %>
+<% if @posts.size>0 %>
+<%  @posts.each do |item| %>
 <h3><%= item.name %> </h3>
 <h4><%= item.content %> </h4>
+<% end %>
