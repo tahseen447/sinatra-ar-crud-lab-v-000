@@ -9,7 +9,6 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/' do
-
   end
 
   get '/posts/new' do
@@ -23,7 +22,6 @@ class ApplicationController < Sinatra::Base
 
   get '/posts' do
     @posts = Post.all
-    if @posts.size > 0
     erb :index
   end
   end
