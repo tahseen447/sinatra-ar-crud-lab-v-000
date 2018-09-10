@@ -1,3 +1,8 @@
 <h2>Wecome to your Posts</h2>
 <h3> Create a new Post here </h3>
 <a href='/posts/new'>Click Here </a>
+
+<% if @posts.size>0
+  @posts.each do |item| %>
+<h3><%= item.name %> </h3>
+<h4><%= item.content %> </h4>
