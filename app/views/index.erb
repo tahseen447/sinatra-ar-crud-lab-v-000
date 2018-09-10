@@ -1,5 +1,5 @@
 <h2>Posts</h2>
-<% @posts.each_with_index do |i, item| %>
+<% @posts.each do |item| %>
 <h3><%= (i+1) %> . <%= item.name %> </h3>
 <h4><%= item.content %> </h4>
 <% end %>
