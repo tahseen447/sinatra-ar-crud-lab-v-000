@@ -4,7 +4,7 @@
 
 <% if @posts.size>0 %>
 <%  @posts.each do |item| %>
-<h3><%= item.name %> </h3> <a href="/posts/<%=item.id%>/edit">Edit </a>
+<h3><%= item.name %> </h3> <a href="/posts/<%=item.id%>/edit">Edit </a> <a href="/posts/<%=item.id%>/delete">De <lete/a>
 <h4><%= item.content %> </h4>
 <% end %>
 <% end %>
